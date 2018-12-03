@@ -31,15 +31,27 @@ Currently PQGo includes the following primitives
 
 ## Usage
 
-Obtain the package and test it as follows:
+To download the package in order to test and experiment locally:
 
 ```
-go get github.com/Teserakt-io/pqgo
+git clone https://github.com/Teserakt-io/pqgo
 cd pqgo
 go test
 ```
 
-Note that PQGo uses Go's recently introduced [modules](https://github.com/golang/go/wiki/Modules) (see [go.mod](go.mod))
+Note that PQGo uses Go's recently introduced
+[modules](https://github.com/golang/go/wiki/Modules) (see
+[go.mod](go.mod)). To use PQGo, add the following import to your
+package:
+
+```
+import "github.com/Teserakt-io/PQGo"
+```
+
+(Warning: Go modules seem to be case sensitive.)
+
+Go will then download the module of the latest master version, e.g. by
+doing `go get -u ./...`).
 
 Benchmarks can be run with [`justbench.sh`](justbench.sh). 
 Note however that the underlying C code is the *reference* implementation, which may be considerably slower than optimized implementations.
