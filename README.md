@@ -31,12 +31,10 @@ Currently PQGo includes the following primitives
 
 ## Usage
 
-To download the package in order to test and experiment locally:
+To download the package to your local Go installation, run
 
 ```
-git clone https://github.com/Teserakt-io/pqgo
-cd pqgo
-go test
+go get -u -v github.com/Teserakt-io/PQGo/...
 ```
 
 Note that PQGo uses Go's recently introduced
