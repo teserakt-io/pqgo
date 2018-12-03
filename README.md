@@ -57,7 +57,7 @@ Note however that the underlying C code is the *reference* implementation, which
 Calling the algorithm from another package requires to import the package, instantiate a primitive, and call its methods. For example, to generate a Dilithium key pair:
 
 ```
-import "github.com/Teserakt-io/pqgo"
+import "github.com/Teserakt-io/PQGo"
 
 (...)
 
