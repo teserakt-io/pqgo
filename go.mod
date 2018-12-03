@@ -1,1 +1,1 @@
-module github.com/Teserakt-io/pqgo
+module github.com/Teserakt-io/PQGo
