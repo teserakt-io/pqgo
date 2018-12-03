@@ -178,7 +178,7 @@ func (Dilithium) Open(sm, pk []byte) (m []byte, err error) {
 	return m, nil
 }
 
-// KyberKeyGenRandom ...
+// KeyGenRandom ...
 func (k Kyber) KeyGenRandom() (pk, sk []byte, err error) {
 	ent := make([]byte, KyberEntropyLen)
 	_, err = rand.Read(ent)
