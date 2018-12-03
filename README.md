@@ -49,7 +49,7 @@ import "github.com/Teserakt-io/PQGo"
 (Warning: Go modules seem to be case sensitive.)
 
 Go will then download the module of the latest master version, e.g. by
-doing `go get -u ./...`).
+doing `go get -u ./...`.
 
 Benchmarks can be run with [`justbench.sh`](justbench.sh). 
 Note however that the underlying C code is the *reference* implementation, which may be considerably slower than optimized implementations.
